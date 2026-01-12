@@ -109,11 +109,11 @@ This guarantees deterministic behavior during life-critical scenarios.
 
 ---
 
-## ⏱️ Autonomous Watchdog Protocol
+## ⏱️ Autonomous Watchlog Protocol
 
 Guardian treats **silence as a signal**.
 
-Using **Amazon EventBridge**, a scheduled watchdog process runs every 60 seconds and scans DynamoDB for expired warning windows. Any unacknowledged warnings are automatically upgraded to `ESCALATED`, ensuring help is dispatched even if the occupant becomes incapacitated after the initial alert.
+Using **Amazon EventBridge**, a scheduled watchlog process runs every 60 seconds and scans DynamoDB for expired warning windows. Any unacknowledged warnings are automatically upgraded to `ESCALATED`, ensuring help is dispatched even if the occupant becomes incapacitated after the initial alert.
 
 ---
 
