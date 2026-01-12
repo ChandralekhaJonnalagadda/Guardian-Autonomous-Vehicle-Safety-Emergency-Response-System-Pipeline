@@ -6,7 +6,7 @@
 
 ## 📌 Project Overview
 
-Guardian was built to address a critical gap in emergency response systems — accidents that occur on isolated or low-traffic roads where there are no bystanders, no CCTV coverage, and victims may be unconscious or unable to call for help.
+Guardian was built to address a critical gap in emergency response systems accidents that occur on isolated or low-traffic roads where there are no bystanders, no CCTV coverage, and victims may be unconscious or unable to call for help.
 
 The project focuses on **real-time accident detection**, **false-alarm reduction**, and **autonomous emergency escalation** using a cloud-native, event-driven architecture on AWS. Guardian demonstrates how high-velocity telemetry, sensor fusion, and stateful decision-making can be combined to build **reliable, life-critical systems**.
 
@@ -14,7 +14,7 @@ The project focuses on **real-time accident detection**, **false-alarm reduction
 
 ## ⚙️ System Overview
 
-Guardian is designed for the **Golden Hour** of emergency response — the narrow window where rapid action can determine survival outcomes. The system transforms raw sensor signals into a **digital representation of a crash event**, allowing emergency decisions to be made automatically.
+Guardian is designed for the **Golden Hour** of emergency response  the narrow window where rapid action can determine survival outcomes. The system transforms raw sensor signals into a **digital representation of a crash event**, allowing emergency decisions to be made automatically.
 
 Key system characteristics:
 
@@ -98,11 +98,11 @@ If the user dismisses the alert, the incident is marked **RESOLVED**. If no resp
 ---
 
 
-## ⏱️ Autonomous Watchlog Protocol
+## ⏱️ Autonomous WatchDog Protocol
 
 Guardian treats **silence as a signal**.
 
-Using **Amazon EventBridge**, a scheduled watchlog process runs every 60 seconds and scans DynamoDB for expired warning windows. Any unacknowledged warnings are automatically upgraded to `ESCALATED`, ensuring help is dispatched even if the occupant becomes incapacitated after the initial alert.
+Using **Amazon EventBridge**, a scheduled watchdog process runs every 60 seconds and scans DynamoDB for expired warning windows. Any unacknowledged warnings are automatically upgraded to `ESCALATED`, ensuring help is dispatched even if the occupant becomes incapacitated after the initial alert.
 
 ---
 
