@@ -15,7 +15,7 @@ sns = boto3.client('sns')
 def lambda_handler(event, context):
     # --- TRIGGER TYPE A: SCHEDULED TIMER (EventBridge) ---
     if event.get('source') == 'aws.events':
-        print("Watchdog Triggered: Checking for unresponsive drivers...")
+        print("Watchlog Triggered: Checking for unresponsive drivers...")
         check_for_escalations()
         return {'statusCode': 200, 'body': 'Escalation check complete.'}
 
