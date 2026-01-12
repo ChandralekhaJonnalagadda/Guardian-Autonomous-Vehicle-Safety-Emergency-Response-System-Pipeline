@@ -97,17 +97,6 @@ If the user dismisses the alert, the incident is marked **RESOLVED**. If no resp
 
 ---
 
-## 🛡️ Fail-Safe Sticky State Logic
-
-Guardian enforces **state locking** to prevent accidental clearance of emergencies.
-
-* Once an incident enters `WARNING` or `ESCALATED`
-* Subsequent `NORMAL` telemetry is ignored
-* Only an explicit user dismissal can clear the state
-
-This guarantees deterministic behavior during life-critical scenarios.
-
----
 
 ## ⏱️ Autonomous Watchlog Protocol
 
